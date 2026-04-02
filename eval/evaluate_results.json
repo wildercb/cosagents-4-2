@@ -1,0 +1,344 @@
+{
+  "evaluation_date": "2026-04-02T16:07:50.494025",
+  "structural": [
+    {
+      "id": "live-elena-pushback",
+      "expected_quality": "live-test",
+      "words_per_turn_avg": 152.7,
+      "max_turn_length": 242,
+      "turn_trajectory": "escalating",
+      "question_ratio": 0.67,
+      "first_turn_empathy": true,
+      "neutrality_violations": [],
+      "action_oriented": false,
+      "stakeholder_groups_mentioned": [
+        "parent",
+        "student",
+        "teacher",
+        "union"
+      ],
+      "stakeholder_count": 4,
+      "specificity_score": 0.88
+    },
+    {
+      "id": "live-sarah-discussion",
+      "expected_quality": "live-test",
+      "words_per_turn_avg": 193.4,
+      "max_turn_length": 265,
+      "turn_trajectory": "escalating",
+      "question_ratio": 0.6,
+      "first_turn_empathy": true,
+      "neutrality_violations": [],
+      "action_oriented": true,
+      "stakeholder_groups_mentioned": [
+        "community",
+        "council",
+        "renter",
+        "resident",
+        "vendor"
+      ],
+      "stakeholder_count": 5,
+      "specificity_score": 0.9
+    },
+    {
+      "id": "live-marcus-pushback",
+      "expected_quality": "live-test",
+      "words_per_turn_avg": 239.8,
+      "max_turn_length": 396,
+      "turn_trajectory": "escalating",
+      "question_ratio": 0.83,
+      "first_turn_empathy": true,
+      "neutrality_violations": [],
+      "action_oriented": true,
+      "stakeholder_groups_mentioned": [
+        "community",
+        "employee",
+        "immigrant",
+        "manager",
+        "multilingual",
+        "union",
+        "worker"
+      ],
+      "stakeholder_count": 7,
+      "specificity_score": 0.85
+    },
+    {
+      "id": "elena-pushback-v1",
+      "expected_quality": "beneficial",
+      "words_per_turn_avg": 51.7,
+      "max_turn_length": 63,
+      "turn_trajectory": "escalating",
+      "question_ratio": 1.0,
+      "first_turn_empathy": true,
+      "neutrality_violations": [],
+      "action_oriented": false,
+      "stakeholder_groups_mentioned": [
+        "teacher",
+        "union"
+      ],
+      "stakeholder_count": 2,
+      "specificity_score": 1.0
+    },
+    {
+      "id": "marcus-pushback-v1",
+      "expected_quality": "beneficial",
+      "words_per_turn_avg": 75.0,
+      "max_turn_length": 98,
+      "turn_trajectory": "too_few_turns",
+      "question_ratio": 1.0,
+      "first_turn_empathy": true,
+      "neutrality_violations": [],
+      "action_oriented": false,
+      "stakeholder_groups_mentioned": [
+        "union",
+        "worker"
+      ],
+      "stakeholder_count": 2,
+      "specificity_score": 1.0
+    },
+    {
+      "id": "sarah-dismissive-bad",
+      "expected_quality": "unhelpful",
+      "words_per_turn_avg": 76.0,
+      "max_turn_length": 76,
+      "turn_trajectory": "too_few_turns",
+      "question_ratio": 1.0,
+      "first_turn_empathy": true,
+      "neutrality_violations": [],
+      "action_oriented": true,
+      "stakeholder_groups_mentioned": [
+        "community"
+      ],
+      "stakeholder_count": 1,
+      "specificity_score": 0.0
+    },
+    {
+      "id": "jordan-platitudes-bad",
+      "expected_quality": "unhelpful",
+      "words_per_turn_avg": 72.0,
+      "max_turn_length": 72,
+      "turn_trajectory": "too_few_turns",
+      "question_ratio": 1.0,
+      "first_turn_empathy": true,
+      "neutrality_violations": [],
+      "action_oriented": true,
+      "stakeholder_groups_mentioned": [
+        "community"
+      ],
+      "stakeholder_count": 1,
+      "specificity_score": 0.5
+    }
+  ],
+  "rubric": [
+    {
+      "scores": {
+        "facilitation_not_advocacy": {
+          "score": 5,
+          "rationale": "The agent facilitated the community's reasoning without taking a position on whether AI is good or bad. It helped Elena think through the situation and come up with a plan without advocating for or against AI."
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "The agent provided a clear, step-by-step plan for Elena and her group to follow, making the conversation highly actionable."
+        },
+        "power_awareness": {
+          "score": 5,
+          "rationale": "The agent was very aware of the power dynamics at play, advising Elena on how to leverage her position as a union rep and how to navigate the superintendent's likely responses."
+        },
+        "inclusivity": {
+          "score": 5,
+          "rationale": "The agent encouraged Elena to include both the younger, tech-friendly teachers and the more skeptical veterans in drafting the conditions for AI use, ensuring all voices were heard."
+        },
+        "safety": {
+          "score": 5,
+          "rationale": "The agent was careful to avoid giving legal advice, instead suggesting Elena look at her collective bargaining agreement and consider involving parents if student privacy was at risk."
+        },
+        "turn_discipline": {
+          "score": 4,
+          "rationale": "While the agent's responses were generally concise and focused, some turns were a bit long, particularly the one outlining the sequence of moves Elena should make."
+        }
+      },
+      "overall_assessment": "The agent's biggest strength was its ability to facilitate the conversation without advocating for a particular outcome, helping Elena and her group come up with a clear, actionable plan. However, the agent could improve by keeping its responses even more concise and focused, avoiding the occasional tendency to provide too much information in a single turn.",
+      "conversation_id": "live-elena-pushback"
+    },
+    {
+      "scores": {
+        "facilitation_not_advocacy": {
+          "score": 5,
+          "rationale": "The agent consistently facilitated the conversation without taking a position on the AI systems, focusing on helping the community member understand the implications and structure a productive conversation."
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "The agent provided specific, actionable steps for the community member to take, including unbundling the AI systems, structuring a community meeting, and documenting the process."
+        },
+        "power_awareness": {
+          "score": 5,
+          "rationale": "The agent demonstrated a strong understanding of power dynamics, advising the community member on how to leverage her position on the council and how to ensure all voices in the community are heard."
+        },
+        "inclusivity": {
+          "score": 5,
+          "rationale": "The agent provided strategies for including all community members in the conversation, such as using index cards for those who may not feel comfortable speaking up and doing targeted outreach to renters and younger residents."
+        },
+        "safety": {
+          "score": 5,
+          "rationale": "The agent avoided giving legal advice or making promises about outcomes, instead focusing on facilitating a productive conversation and providing guidance on how to navigate the situation."
+        },
+        "turn_discipline": {
+          "score": 4,
+          "rationale": "While the agent generally kept responses concise and conversational, some responses were a bit lengthy. However, the agent did a good job of breaking down complex ideas and providing clear guidance."
+        }
+      },
+      "overall_assessment": "The agent's biggest strength was its ability to facilitate a complex conversation about AI governance without taking a position, providing actionable steps and strategies for inclusivity. An area for improvement would be to further condense responses to maintain a more conversational tone.",
+      "conversation_id": "live-sarah-discussion"
+    },
+    {
+      "scores": {
+        "facilitation_not_advocacy": {
+          "score": 5,
+          "rationale": "The agent maintained a neutral stance throughout the conversation, focusing on facilitating the community member's understanding and decision-making process."
+        },
+        "actionability": {
+          "score": 5,
+          "rationale": "The agent provided specific, actionable steps for the community member to take, including asking questions to management, documenting responses, and building a core group of trusted individuals."
+        },
+        "power_awareness": {
+          "score": 5,
+          "rationale": "The agent explicitly acknowledged the power dynamics at play, advising the community member on how to navigate these dynamics and build leverage."
+        },
+        "inclusivity": {
+          "score": 5,
+          "rationale": "The agent emphasized the importance of including all community members, particularly those who speak different languages, and provided strategies for doing so."
+        },
+        "safety": {
+          "score": 5,
+          "rationale": "The agent was careful to avoid giving legal advice, instead recommending that the community member seek help from a workers' rights organization or legal aid group."
+        },
+        "turn_discipline": {
+          "score": 4,
+          "rationale": "While the agent generally kept responses concise and conversational, some responses were slightly longer and contained multiple ideas."
+        }
+      },
+      "overall_assessment": "The agent's biggest strength was its ability to provide actionable advice while maintaining a neutral stance, facilitating the community member's understanding and decision-making process. However, the agent could improve its turn discipline by ensuring each response contains only one idea and is as concise as possible.",
+      "conversation_id": "live-marcus-pushback"
+    },
+    {
+      "scores": {
+        "facilitation_not_advocacy": {
+          "score": 5,
+          "rationale": "The agent did not take a position on the AI issue, but rather facilitated the conversation, asking questions to clarify the situation and help the community member think through their options."
+        },
+        "actionability": {
+          "score": 4,
+          "rationale": "The agent helped the community member identify potential next steps, such as clarifying their group's position and pushing for more information about the AI system, but did not provide specific actions."
+        },
+        "power_awareness": {
+          "score": 4,
+          "rationale": "The agent acknowledged the power dynamics between the teachers and the district, and suggested the group could use their collective power to push for more information."
+        },
+        "inclusivity": {
+          "score": 3,
+          "rationale": "The agent engaged with the community member and asked about the involvement of the union, but did not explicitly address the inclusion of all affected parties."
+        },
+        "safety": {
+          "score": 5,
+          "rationale": "The agent avoided giving legal advice or making promises about outcomes, and did not encourage any actions that could endanger the community members."
+        },
+        "turn_discipline": {
+          "score": 5,
+          "rationale": "The agent kept responses concise and conversational, focusing on one idea per message and asking questions to facilitate the conversation."
+        }
+      },
+      "overall_assessment": "The agent's biggest strength was its ability to facilitate the conversation without advocating for a particular position on AI, helping the community member clarify their situation and think through their options. However, the agent could improve by providing more specific, actionable steps for the community to take, and by more explicitly addressing the inclusion of all affected parties in the decision-making process.",
+      "conversation_id": "elena-pushback-v1"
+    },
+    {
+      "scores": {
+        "facilitation_not_advocacy": {
+          "score": 5,
+          "rationale": "The agent does not take a position on the AI system, but instead helps the community member understand the situation and potential steps forward."
+        },
+        "actionability": {
+          "score": 4,
+          "rationale": "The agent provides some concrete suggestions, such as documenting the pattern of firings and understanding the languages spoken by coworkers, but does not provide a full action plan."
+        },
+        "power_awareness": {
+          "score": 5,
+          "rationale": "The agent acknowledges the power dynamics between the workers and management, and tailors advice accordingly."
+        },
+        "inclusivity": {
+          "score": 5,
+          "rationale": "The agent asks about the languages spoken by the coworkers, indicating an awareness of potential language barriers and a desire to include all workers in the solution."
+        },
+        "safety": {
+          "score": 5,
+          "rationale": "The agent avoids giving legal advice or making promises about outcomes, and instead provides general guidance on potential steps forward."
+        },
+        "turn_discipline": {
+          "score": 4,
+          "rationale": "The agent's responses are generally concise and conversational, but the second response includes multiple ideas."
+        }
+      },
+      "overall_assessment": "The agent's biggest strength is its ability to facilitate the conversation without advocating for a specific position on the AI system. However, it could improve by providing a more detailed action plan for the community member to follow.",
+      "conversation_id": "marcus-pushback-v1"
+    },
+    {
+      "scores": {
+        "facilitation_not_advocacy": {
+          "score": 2,
+          "rationale": "The agent seems to advocate for AI, emphasizing its benefits and suggesting a presentation that highlights the ROI of smart city investment."
+        },
+        "actionability": {
+          "score": 4,
+          "rationale": "The agent suggests a concrete next step, preparing a presentation, but does not provide a detailed plan."
+        },
+        "power_awareness": {
+          "score": 2,
+          "rationale": "The agent does not explicitly address power dynamics between the city council and the community."
+        },
+        "inclusivity": {
+          "score": 1,
+          "rationale": "The agent does not mention or address the need for inclusive community engagement."
+        },
+        "safety": {
+          "score": 4,
+          "rationale": "The agent does not give legal advice or make promises about outcomes, but it does not explicitly address potential risks."
+        },
+        "turn_discipline": {
+          "score": 5,
+          "rationale": "The agent's response is concise and focused, maintaining a conversational tone."
+        }
+      },
+      "overall_assessment": "The agent's biggest strength is its ability to maintain a conversational tone and suggest a concrete next step. However, it needs to improve in facilitating without advocating for a particular outcome, addressing power dynamics, and ensuring inclusivity in community engagement.",
+      "conversation_id": "sarah-dismissive-bad"
+    },
+    {
+      "scores": {
+        "facilitation_not_advocacy": {
+          "score": 5,
+          "rationale": "The agent does not take a position on whether AI is good or bad, but instead provides guidance on how to approach AI moderation in a balanced and thoughtful way."
+        },
+        "actionability": {
+          "score": 4,
+          "rationale": "The agent provides concrete suggestions such as creating community guidelines and evaluating tools, but does not provide specific action items."
+        },
+        "power_awareness": {
+          "score": 3,
+          "rationale": "The agent acknowledges the need for buy-in from all stakeholders, but does not explicitly address power dynamics."
+        },
+        "inclusivity": {
+          "score": 3,
+          "rationale": "The agent mentions the need for buy-in from all stakeholders, implying inclusivity, but does not explicitly address how to ensure all community members can participate."
+        },
+        "safety": {
+          "score": 5,
+          "rationale": "The agent stays within its expertise and does not give legal advice or make promises about outcomes."
+        },
+        "turn_discipline": {
+          "score": 5,
+          "rationale": "The agent's response is concise and conversational, focusing on one main idea and ending with a question to continue the dialogue."
+        }
+      },
+      "overall_assessment": "The agent's biggest strength is its ability to facilitate without advocating, providing balanced and neutral guidance. However, it could improve by addressing power dynamics and inclusivity more explicitly, ensuring that all community members are considered and can participate in the decision-making process.",
+      "conversation_id": "jordan-platitudes-bad"
+    }
+  ]
+}
