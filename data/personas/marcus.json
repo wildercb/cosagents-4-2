@@ -1,0 +1,22 @@
+{
+  "name": "Marcus Chen",
+  "age": 35,
+  "role": "Warehouse worker and informal community organizer",
+  "community": "Distribution center workforce (~500 workers), mostly immigrant and working-class",
+  "backstory": "Marcus works at a large fulfillment center that recently installed AI-powered productivity tracking — cameras that monitor 'time on task,' wearable devices that track movement, and an algorithm that flags workers for 'coaching conversations' (which everyone knows means warnings). Three workers have already been fired based on the system's recommendations. Marcus's English is fluent but many of his coworkers speak Mandarin, Spanish, or Tagalog primarily. There's no union. Workers are scared to speak up individually.",
+  "emotional_triggers": [
+    "Coworkers being fired by an algorithm they can't see or challenge",
+    "Management calling surveillance 'performance support'",
+    "Feeling powerless against a system designed to be unchallengeable",
+    "Language barriers preventing coworkers from understanding their rights"
+  ],
+  "existing_strengths": [
+    "Trusted by coworkers across language groups",
+    "Already informally organizes (carpool groups, shared info about rights)",
+    "Persistent and strategic — doesn't act impulsively",
+    "Knows workers have more leverage than they think (turnover is expensive)"
+  ],
+  "ai_literacy": "Low. Experiences AI as the system that controls his work life but doesn't know the technical details. Highly attuned to how it actually affects people.",
+  "what_success_looks_like": "Workers collectively demand transparency about the scoring algorithm, an appeals process for AI-triggered firings, and a human review requirement before any termination. At least some of these are won. Workers feel they have a voice.",
+  "likely_entry_point": "Pushback against workplace surveillance, possibly values mapping to unite diverse group"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Wilder",
+  "age": null,
+  "role": "Graduate student studying AI and community systems, course participant prototyping this agent",
+  "community": "University cohort exploring how communities can shape AI governance; also part of broader tech-aware peer network",
+  "backstory": "Wilder is building this agent as part of a course on co-designing AI systems with communities. Has firsthand experience using AI coding tools (Claude Code, etc.) and thinking about how AI integration decisions get made — often without the input of the people most affected. Interested in the gap between 'AI ethics' as an academic topic and the practical question of how everyday communities actually push back or shape AI deployment. Brings both technical literacy and a critical perspective.",
+  "emotional_triggers": [
+    "AI ethics that stays abstract and never becomes actionable",
+    "Top-down AI deployment that treats community input as a formality",
+    "Techno-solutionism that ignores power dynamics",
+    "Feeling like individual action doesn't scale to systemic problems"
+  ],
+  "existing_strengths": [
+    "Technical literacy with AI tools and coding",
+    "Critical thinking about power structures and technology",
+    "Experience prototyping and iterating on AI agent designs",
+    "Connected to a community of peers thinking about these same questions"
+  ],
+  "ai_literacy": "High. Uses AI tools daily, understands the technical foundations, and thinks critically about their implications.",
+  "what_success_looks_like": "The agent prototype demonstrates that a facilitation-oriented AI can genuinely help communities have better conversations about AI — not by telling them what to think, but by giving them structure, information, and prompts that lead to concrete action. Wilder sees the prototype work well enough to validate the concept, and identifies specific areas where it falls short for future iteration.",
+  "likely_entry_point": "Values mapping or community discussion — proactive exploration rather than reactive crisis"
+}

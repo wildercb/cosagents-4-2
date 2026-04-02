@@ -1,0 +1,67 @@
+(20-30 mins) After prototyping, reflect on your learning
+For each question in the table, write 1-2 sentences or 3-5 bullet points, whichever is easier for you to express yourself.
+
+This does not need to be formal or academic writing, the point is to think through and help internalize and reflect on your experience to support and enhance your learning. (Don’t use AI for this, unless you can explain why that use helps your learning, in your answers to the questions.)
+
+
+What problem/opportunity(ies) did you try prototyping an agent for?
+“Community-based Steering of AI” Assistant: AI agent that facilitates communities to collectively steer implementation and limits on use of AI agents, including facilitating community discussing, designing and co-designing desired AI integration, pushing back against undesirable integration.
+…
+Share a link to your github repository and make sure it is shared with greglnelson (Dr. Greg's github account). Make sure the latest and best version of your agent is on the main branch.
+Student writes their answer here
+…
+
+Describe what you changed about what your agent does and why you made those changes.
+Student writes their answer here
+…
+
+Describe what you learned about the design opportunity/problem from doing your prototyping, such as what is hard about it, what are key insights or feature ideas for you to explore next.
+Student writes their answer here
+…
+
+Describe 3 to 5 ideas for features or changes to the agent that would help it best address the root of the design opportunity/problem, which you have NOT yet explored.
+Student writes their answer here
+…
+
+Describe what you learned about designing and prototyping agents in general from this experience.
+Student writes their answer here
+…
+
+Create at least actionable 3-5 takeaways/lessons for designing and prototyping agents in the future.
+Student writes their answer here
+…
+
+Create at least actionable 3-5 "what not to do" takeaways/lessons for designing and prototyping agents in the future. For example, to avoid a certain kind of design mistake, or avoid spending too much time on certain steps in that process.
+Student writes their answer here
+…
+
+Describe what you learned about using AI (i.e. Claude Code) to assist you in prototyping your agent.
+Student writes their answer here
+…
+
+Create at least actionable 3-5 takeaways/lessons for using AI (i.e. Claude Code) to assist you in prototyping and implementing your AI agent for your project.
+Student writes their answer here
+…
+
+Create at least actionable 3-5 "what not to do" takeaways/lessons for using AI (i.e. Claude Code) to assist you in prototyping and implementing your AI agent for your project. For example, to avoid using AI in a specific way that was counter-productive, or avoid a certain kind of rabbit hole.
+Student writes their answer here
+…
+
+
+In what ways, if any, did you seek or get human collaboration, help, or feedback for this assignment? and why/why not? 
+Student writes their answer here
+…
+How might you improve your human collaboration, help, or feedback seeking for your learning? 
+Student writes their answer here
+…
+
+How much time did you spend on this assignment (studying the materials, answering the questions, etc)? Give a range.
+Student writes their answer here
+
+As mentioned in the syllabus AI use policy, use of AI is permitted in this course within a framework of mutual trust. Any use of AI is permitted as long as you share it explicitly. Share below links to your AI use chats or you can copy-paste them if that is easier. This includes using AI for your learning in general. First, I use these to give direct feedback to help you improve your AI use and also help us all learn to use AI better. As I’ve said before, this is not a trap, and better use of AI is a learning objective of this course. Second, I point to students engaging and actually sharing their AI use transparently in courses like ours, to advocate against faculty banning AI use, falsely accusing students of AI use, which generally creates an environment of fear and shame in response that also harms students that do not even choose to use AI.
+For using Claude Code, by using entire, when you commit file changes such as notes, created derived files from readings, etc, it will save and share your session history. So you don’t need to turn anything extra in here for that, as long as we have github repo for your work on this assignment.
+If you use your Claude account from the class and the online interface, just share your conversation links here, or put them in a project, share the project, then share each conversation in that project/folder
+Your answer here i.e. link to project goes here…
+
+
+Thank you for your engagement and learning! I look forward to reading your responses.

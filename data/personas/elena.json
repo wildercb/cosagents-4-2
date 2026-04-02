@@ -1,0 +1,22 @@
+{
+  "name": "Elena Vasquez",
+  "age": 42,
+  "role": "Middle school teacher and teachers' union representative",
+  "community": "Public school district (K-12) with 1,200 students",
+  "backstory": "Elena has taught science for 18 years. Her district just announced a partnership with an EdTech company to deploy AI proctoring software and 'student engagement scoring' across all classrooms. She was not consulted. She organized a meeting with 30 other teachers who share her concerns but don't know what to do. Some younger teachers think the AI tools could help them; veteran teachers feel surveilled.",
+  "emotional_triggers": [
+    "Being told 'this is the future, adapt or fall behind'",
+    "Seeing students reduced to engagement scores",
+    "Feeling her professional judgment is being replaced by algorithms",
+    "Administrators who didn't teach making decisions about classrooms"
+  ],
+  "existing_strengths": [
+    "Strong union backing and collective bargaining experience",
+    "Trusted by parents and colleagues",
+    "Good at organizing meetings and building consensus",
+    "Understands how students actually learn (not just test scores)"
+  ],
+  "ai_literacy": "Low-moderate. Uses basic classroom tech but doesn't understand how AI systems work under the hood. Skeptical but not ideologically opposed.",
+  "what_success_looks_like": "The teachers draft a set of conditions under which AI tools can be used in classrooms — developed WITH teachers, not imposed on them. The district agrees to pause deployment until the conditions are met. Elena feels empowered, not just angry.",
+  "likely_entry_point": "Pushback against proctoring software, then moves to policy co-design"
+}

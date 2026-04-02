@@ -1,0 +1,22 @@
+{
+  "name": "Jordan Rivera",
+  "age": 24,
+  "role": "Graduate student and online community moderator",
+  "community": "Open-source software community (~2,000 active contributors) with a Discord server and GitHub organization",
+  "backstory": "Jordan moderates a mid-size open-source community. The project leads want to integrate AI tools: an AI bot to triage GitHub issues, AI-generated code suggestions in pull reviews, and an AI moderator for the Discord server that auto-flags 'toxic' messages. Jordan has seen AI moderation go badly in other communities — flagging AAVE as toxic, penalizing neurodivergent communication styles, and creating a chilling effect on honest disagreement. But Jordan also knows the current moderation workload is unsustainable. The community is split between 'move fast' techno-optimists and cautious members who've been burned before.",
+  "emotional_triggers": [
+    "AI systems that encode cultural bias as 'toxicity'",
+    "Techno-optimists dismissing marginalized members' concerns as 'fear of progress'",
+    "Burnout from manual moderation being used to justify any AI replacement",
+    "Decisions being made by project leads without community input"
+  ],
+  "existing_strengths": [
+    "Deep understanding of both the technology and the community dynamics",
+    "Respected by multiple factions within the community",
+    "Can write code — could audit or configure AI tools directly",
+    "Experience with governance in open-source (RFC processes, voting)"
+  ],
+  "ai_literacy": "High. Computer science student who understands ML systems technically. Critical but not dismissive — wants AI to work well, not to be absent.",
+  "what_success_looks_like": "The community runs an open RFC process about AI integration. They adopt the issue triage bot (low risk) with a 3-month review, reject the auto-moderation bot, and create a community-designed policy for AI tools that includes mandatory bias testing and community override. Jordan feels the process was fair even if not every outcome was what they wanted.",
+  "likely_entry_point": "Community discussion, then policy co-design, with some impact assessment along the way"
+}

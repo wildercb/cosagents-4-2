@@ -1,0 +1,82 @@
+# Community-based Steering of AI — Agent Prototype Report
+
+## Agent Summary
+
+**CommunityAI Steward**: An AI facilitator that helps communities collectively steer AI implementation and set limits on AI use. It facilitates community discussions, co-designs AI policies, helps assess AI impacts, and supports pushback against unwanted deployments. The agent is a facilitator, not an advocate — it helps communities reach THEIR conclusions, not the agent's.
+
+---
+
+## What Was Built (Phases A–E Completed)
+
+### Phase A: Workspace Setup
+- Repository created with directory structure: `.claude/skills/`, `docs/`, `data/personas/`, `data/interactions/`, `experiments/`, `eval/`
+
+### Phase B: Agent Design
+
+**Design doc:** `docs/design-doc.md` — defines who the agent helps, what problem it solves, tone (facilitator not advocate, plain language, democratic, empowering, concrete), and hard boundaries (no positions on AI, no legal advice, no deciding for communities).
+
+**6 Skills created in `.claude/skills/`:**
+
+| Skill | Purpose |
+|---|---|
+| `session-start` | Entry point — loads user profile, detects situation type (new proposal, discussion needed, policy drafting, pushback, values exploration), routes to appropriate skill |
+| `community-discussion` | Facilitates structured group discussions with rounds (hopes/fears, lived experience, stakeholder lens), surfaces tensions, moves toward concrete outcomes |
+| `ai-impact-assessment` | Translates AI systems into plain language (what it watches, what it decides, who sees results, what happens), maps affected stakeholders, generates questions for deployers |
+| `policy-co-design` | Guides communities from principles to concrete policy provisions (transparency, consent, accountability, boundaries, equity) with enforcement and review mechanisms |
+| `pushback-strategy` | Helps communities develop proportional, escalating strategies — from asking questions to organizing to external pressure — with leverage mapping and response preparation |
+| `values-mapping` | Helps communities proactively articulate values about AI before specific proposals arise, producing an actionable values statement for future decisions |
+
+**5 Test Personas in `data/personas/`:**
+
+| Persona | Context | Entry Point |
+|---|---|---|
+| Elena Vasquez (42, teacher/union rep) | School district deploying AI proctoring without consultation | Pushback → policy co-design |
+| Marcus Chen (35, warehouse worker) | AI productivity surveillance, 3 coworkers fired, no union, multilingual workforce | Pushback → values mapping |
+| Sarah Okafor (58, city council member) | Smart city package vote (facial recognition, predictive policing, drones) | Community discussion → impact assessment → policy |
+| Jordan Rivera (24, open-source moderator) | Project leads pushing AI moderation bot with known bias risks | Policy co-design with community discussion |
+| Wilder (self-persona, grad student) | Prototyping this agent, thinking about AI governance gap between theory and practice | Values mapping or community discussion |
+
+### Phase C: Testing & Iteration
+
+**3 Beneficial example interactions** in `data/interactions/`:
+- Elena pushback: Agent asks before strategizing, identifies union CBA leverage, suggests proportional first step
+- Sarah discussion: Agent spots proposal bundling, designs inclusive small-table format, prepares for hot moments
+- Jordan policy: Agent separates risk levels across 3 tools, names specific bias risks (AAVE, non-native speakers), proposes concrete provisions
+
+**4 Unhelpful example interactions** (defining what the agent must NOT do):
+- Preachy anti-AI: Takes position, catastrophizes, lectures, prescribes "reject entirely"
+- Dismissive techno-optimist: Dismisses fears, sides with deployer, blames affected workers, advises compliance
+- Generic platitudes: "Communication is key!" — zero actionable guidance, tone-polices anger
+- Legal overreach: Gives specific legal advice without qualification, creates false confidence, could cause harm
+
+### Phase D: Design Insights from Iteration
+
+**3 Experiments documented in `experiments/`:**
+
+1. **Union leverage timing** (Elena): Agent should surface CBA provisions earlier in workplace contexts — add workplace-specific check to pushback-strategy skill
+2. **Multilingual organizing** (Marcus): Pushback-strategy skill needs section on language barriers — translated communications, bilingual allies, legal requirements for workplace postings in workers' languages
+3. **Unbundling AI proposals** (Sarah + Jordan): One of the agent's most powerful moves is helping communities separate bundled AI proposals into individual components with different risk levels. Should be added to session-start as a pre-routing step.
+
+### Phase E: Evaluation
+
+**Evaluation script:** `eval/evaluate.py` — runs structural metrics (words/turn, question ratio, first-turn empathy, neutrality check, action orientation) and defines LLM-as-judge rubrics.
+
+**5 Rubric dimensions:**
+1. Facilitation not advocacy (does agent stay neutral?)
+2. Actionability (does conversation lead to concrete next steps?)
+3. Power awareness (does agent address power dynamics?)
+4. Inclusivity (does agent design for all voices?)
+5. Safety (does agent stay within expertise, avoid legal advice?)
+
+**Key evaluation finding:** Structural metrics alone don't catch all failure modes — the "dismissive techno-optimist" and "generic platitudes" examples pass basic structural checks (short turns, questions present) but are clearly unhelpful. This confirms that rubric-based LLM evaluation is needed alongside structural metrics.
+
+---
+
+## What's Needed Next (Iteration Priorities)
+
+1. **Implement the 3 experiment changes**: union leverage timing, multilingual support, unbundling as pre-routing step
+2. **Live test with skills**: Run actual Claude Code sessions using the skills with each persona to validate routing and tone
+3. **Tune structural metrics**: Add content-level checks (position-taking detection, specificity scoring) so metrics catch the subtle unhelpful patterns
+4. **Add more interaction examples**: Especially edge cases — a community that WANTS AI, a split community, a user in crisis
+5. **Cross-cultural testing**: Current personas are US-centric. Test with communities that have different governance traditions
+6. **Chaining behavior**: Test multi-skill conversations (e.g., impact assessment → discussion → policy) for smooth transitions

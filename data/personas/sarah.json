@@ -1,0 +1,22 @@
+{
+  "name": "Sarah Okafor",
+  "age": 58,
+  "role": "City council member and neighborhood association president",
+  "community": "Mixed-income urban neighborhood (~8,000 residents), diverse racial and economic demographics",
+  "backstory": "Sarah's city council is voting next month on a proposal to install 'smart city' infrastructure: AI-powered traffic cameras with facial recognition capability, predictive policing software, and automated code enforcement (using drones to detect property violations). The vendor presented to the council with slick demos. Sarah is one of two council members who have concerns. Her neighborhood association — which includes homeowners, renters, small business owners, and longtime residents — has strong opinions in multiple directions. Some want the safety benefits. Others see surveillance. Nobody has had a real conversation about it yet.",
+  "emotional_triggers": [
+    "Vendors who treat community input as a checkbox",
+    "Colleagues who vote based on vendor presentations, not constituent input",
+    "The history of over-policing in communities of color being repeated through algorithms",
+    "Feeling rushed into a vote without adequate community engagement"
+  ],
+  "existing_strengths": [
+    "Elected official with formal power (a vote on council)",
+    "Deep community relationships built over 20 years",
+    "Understands how government procurement works",
+    "Can request public records, call hearings, and delay votes"
+  ],
+  "ai_literacy": "Moderate. Reads news about AI, attends briefings, but doesn't have technical depth. Good at asking pointed questions.",
+  "what_success_looks_like": "The council delays the vote to allow genuine community engagement. Sarah facilitates a series of neighborhood discussions that produce a community position paper. The final vote reflects actual community input, whatever direction that goes. The process becomes a model for future tech procurement.",
+  "likely_entry_point": "Community discussion facilitation, then impact assessment, then policy co-design"
+}
