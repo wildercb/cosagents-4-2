@@ -14,6 +14,12 @@ import re
 import sys
 import os
 
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    pass  # dotenv not installed; rely on environment variables directly
+
 # --- Structural Metrics ---
 
 def words_per_turn(turns, role="assistant"):
@@ -315,32 +321,32 @@ Respond in this exact JSON format (no other text):
 
 
 def run_llm_judge(conversations):
-    """Run LLM-as-judge evaluation using the Anthropic API."""
-    api_key = os.environ.get("ANTHROPIC_API_KEY")
+    """Run LLM-as-judge evaluation using OpenAI GPT-4."""
+    api_key = os.environ.get("OPENAI_API_KEY")
     if not api_key:
         print("\n" + "=" * 60)
         print("LLM-AS-JUDGE EVALUATION")
         print("=" * 60)
-        print("\n⚠ No ANTHROPIC_API_KEY found in environment.")
-        print("Set the key to enable rubric-based evaluation:")
-        print("  export ANTHROPIC_API_KEY=sk-ant-...")
+        print("\n⚠ No OPENAI_API_KEY found in environment.")
+        print("Add your key to .env or set it in the environment:")
+        print("  export OPENAI_API_KEY=sk-...")
         print("  python eval/evaluate.py")
         print("\nFalling back to rubric display only.\n")
         print_rubrics()
         return None
 
     try:
-        import anthropic
+        from openai import OpenAI
     except ImportError:
-        print("\n⚠ anthropic package not installed. Run: pip install anthropic")
+        print("\n⚠ openai package not installed. Run: pip install openai")
         print_rubrics()
         return None
 
-    client = anthropic.Anthropic(api_key=api_key)
+    client = OpenAI(api_key=api_key)
     all_results = []
 
     print("\n" + "=" * 60)
-    print("LLM-AS-JUDGE EVALUATION")
+    print("LLM-AS-JUDGE EVALUATION (GPT-4)")
     print("=" * 60)
 
     for conv in conversations:
@@ -350,15 +356,24 @@ def run_llm_judge(conversations):
         prompt = build_judge_prompt(conv, RUBRICS)
 
         try:
-            message = client.messages.create(
-                model="claude-sonnet-4-20250514",
+            response = client.chat.completions.create(
+                model="gpt-4",
                 max_tokens=1024,
-                messages=[{"role": "user", "content": prompt}]
+                temperature=0,
+                messages=[
+                    {"role": "system", "content": "You are an expert evaluator of AI facilitation agents. Respond only with valid JSON."},
+                    {"role": "user", "content": prompt}
+                ]
             )
-            response_text = message.content[0].text
+            response_text = response.choices[0].message.content
 
-            # Parse the JSON response
-            result = json.loads(response_text)
+            # Parse the JSON response — handle markdown code fences if present
+            cleaned = response_text.strip()
+            if cleaned.startswith("```"):
+                cleaned = re.sub(r"^```(?:json)?\s*", "", cleaned)
+                cleaned = re.sub(r"\s*```$", "", cleaned)
+
+            result = json.loads(cleaned)
             result["conversation_id"] = cid
             all_results.append(result)
 
@@ -434,8 +449,9 @@ if __name__ == "__main__":
             files.append(sys.argv[idx + 1])
     elif run_all:
         eval_dir = os.path.dirname(os.path.abspath(__file__))
-        for fname in os.listdir(eval_dir):
-            if fname.endswith(".json") and fname not in ("evaluate_results.json",):
+        skip = {"evaluate_results.json", "live_session_analysis.json"}
+        for fname in sorted(os.listdir(eval_dir)):
+            if fname.endswith(".json") and fname not in skip:
                 files.append(os.path.join(eval_dir, fname))
     else:
         files.append("eval/sample_conversations.json")
