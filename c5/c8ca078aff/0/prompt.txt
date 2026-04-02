@@ -1,0 +1,6 @@
+<ide_opened_file>The user opened the file /Users/wilder/dev/UMO/cosagents/4-2/temp.txt in the IDE. This may or may not be related to the current task.</ide_opened_file>
+OPlease review our progress so far in this rpo from the directions in temp.txt and our goal : “Community-based Steering of AI” Assistant: AI agent that facilitates communities to collectively steer implementation and limits on use of AI agents, including facilitating community discussing, designing and co-designing desired AI integration, pushing back against undesirable integration.,
+
+---
+
+Yes lets run a live session here store the results for me in json, and do an anlysis of your own for what we can do to overcoming any shortcomings in our design
