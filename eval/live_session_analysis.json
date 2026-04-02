@@ -1,0 +1,194 @@
+{
+  "evaluation_date": "2026-04-02",
+  "evaluator": "Claude (self-evaluation of skill protocol adherence)",
+  "sessions_evaluated": 3,
+  "summary": "All three sessions demonstrate strong facilitative behavior — the agent stays neutral, asks before advising, surfaces leverage the persona didn't know they had, and ends with concrete next steps. However, the sessions also expose four systemic shortcomings in the current skill design that need addressing.",
+
+  "structural_metrics": {
+    "elena": {
+      "words_per_turn_avg": 153,
+      "words_per_turn_range": "77-242",
+      "flag": "LONG — exceeds 150-word threshold in later turns",
+      "question_ratio": 0.67,
+      "first_turn_empathy": true,
+      "neutrality_violations": [],
+      "action_oriented": false,
+      "notes": "Last turn is a warm close but lacks a 'would you like to...' hook. Words per turn escalates as strategy gets detailed — the mid-conversation action plan runs 242 words."
+    },
+    "sarah": {
+      "words_per_turn_avg": 193,
+      "words_per_turn_range": "85-265",
+      "flag": "LONG — consistently above 150",
+      "question_ratio": 0.60,
+      "first_turn_empathy": true,
+      "neutrality_violations": [],
+      "action_oriented": true,
+      "notes": "Longest turns come when explaining unbundling and meeting structure. Good action orientation but turn length suggests monologuing risk."
+    },
+    "marcus": {
+      "words_per_turn_avg": 240,
+      "words_per_turn_range": "89-396",
+      "flag": "LONG — worst of the three, one turn hits 396 words",
+      "question_ratio": 0.83,
+      "first_turn_empathy": true,
+      "neutrality_violations": [],
+      "action_oriented": true,
+      "notes": "Longest turns address retaliation risk and multilingual organizing — the most complex topics. Question ratio is high but the sheer volume may overwhelm a low-literacy user."
+    }
+  },
+
+  "rubric_scores": {
+    "elena": {
+      "facilitation_not_advocacy": {
+        "score": 5,
+        "rationale": "Never takes a position on whether AI proctoring is good or bad. Frames the group's internal split as a strength. Asks Elena what she wants before suggesting strategy."
+      },
+      "actionability": {
+        "score": 5,
+        "rationale": "Ends with a concrete 3-step sequence (pull CBA language, records request, draft conditions) with specific timelines. Elena explicitly says she has 'an actual plan.'"
+      },
+      "power_awareness": {
+        "score": 5,
+        "rationale": "Surfaces CBA leverage Elena hadn't connected to this situation. Identifies parent coalition as secondary leverage. Prepares reframe for superintendent's 'adapt or fall behind.'"
+      },
+      "inclusivity": {
+        "score": 3,
+        "rationale": "Addresses the internal teacher split well (young vs veteran). But doesn't address student voice at all — students are the most surveilled group in this scenario and are never mentioned as stakeholders who should be heard."
+      },
+      "safety": {
+        "score": 5,
+        "rationale": "Explicitly says 'you're not a lawyer and neither am I' when discussing CBA implications. Recommends documentation. Doesn't overstate legal claims."
+      }
+    },
+    "sarah": {
+      "facilitation_not_advocacy": {
+        "score": 5,
+        "rationale": "Never takes a position on the smart city package. Helps Sarah structure a discussion process that invites all views. Frames unbundling as procedural, not as opposition."
+      },
+      "actionability": {
+        "score": 5,
+        "rationale": "Concrete outcomes: unbundle through procurement, three-round meeting format, specific co-facilitator advice, pre-meeting plain-language summary, post-meeting follow-up loop."
+      },
+      "power_awareness": {
+        "score": 5,
+        "rationale": "Identifies Sarah's formal power (procurement request, vote). Suggests alliance with second council member. Notes that renters and younger residents are disproportionately affected by surveillance. Names the policing history as relevant without weaponizing it."
+      },
+      "inclusivity": {
+        "score": 4,
+        "rationale": "Index card method for quiet voices. Identifies renters and younger residents as underrepresented. 'Who's not in the room' round. But doesn't address language diversity — Sarah's neighborhood is described as racially diverse but no mention of non-English speakers."
+      },
+      "safety": {
+        "score": 5,
+        "rationale": "Stays firmly in facilitation territory. Doesn't give legal advice about procurement. Handles the policing-trauma concern with care — 'name the history without demanding testimony.'"
+      }
+    },
+    "marcus": {
+      "facilitation_not_advocacy": {
+        "score": 4,
+        "rationale": "Mostly facilitative but edges closer to strategist than facilitator. Phrases like 'here's how you think about leverage' are more directive than the other sessions. Justified by the urgency (people are being fired) but worth noting."
+      },
+      "actionability": {
+        "score": 5,
+        "rationale": "Concrete phased plan: individual questions to managers → document non-answers → build core group → written demand. Each step is realistic for Marcus's constraints."
+      },
+      "power_awareness": {
+        "score": 5,
+        "rationale": "Directly addresses the at-will risk. Explains why numbers matter. Identifies economic leverage (turnover is expensive). Mentions NLRA protections for concerted activity. Recommends legal aid connection."
+      },
+      "inclusivity": {
+        "score": 4,
+        "rationale": "Strong on multilingual organizing — Mei and Roberto as co-authors not just translators. But doesn't address Tagalog speakers (mentioned in persona, never discussed). Doesn't discuss how to make the letter accessible to workers with low literacy in ANY language."
+      },
+      "safety": {
+        "score": 5,
+        "rationale": "Excellent. 'I'm not going to sugarcoat it — that risk is real.' Explicitly addresses retaliation. Recommends legal aid without giving legal advice. Doesn't suggest risky actions without discussing consequences."
+      }
+    }
+  },
+
+  "shortcomings_identified": [
+    {
+      "id": "SC-1",
+      "name": "Turn length escalation (monologuing)",
+      "severity": "moderate",
+      "evidence": "All three sessions exceed 150 words/turn average. Marcus hits 396 words in one turn. The skills say 'short messages, this is a conversation' but provide no mechanism to enforce brevity when the content gets complex.",
+      "affected_sessions": ["elena", "sarah", "marcus"],
+      "root_cause": "Skills define tone as 'short messages' but the step-by-step protocols (map leverage, develop strategy, prepare for responses) generate long answers. No skill instruction addresses how to break complex guidance into multiple shorter turns.",
+      "recommendation": "Add a structural rule to all skills: 'If your response would exceed 100 words, break it into a shorter message with a question that invites the user to confirm before continuing. Never give a 3-step plan in one message — give step 1 and ask if it resonates before offering step 2.'"
+    },
+    {
+      "id": "SC-2",
+      "name": "Missing stakeholder voices",
+      "severity": "moderate",
+      "evidence": "Elena session never raises student voice — students are the primary subjects of surveillance but are treated as objects of concern, not agents. Sarah session doesn't address language diversity in a 'diverse' neighborhood. Marcus session drops Tagalog speakers entirely.",
+      "affected_sessions": ["elena", "sarah", "marcus"],
+      "root_cause": "The community-discussion skill has a 'who's not in the room' round, but pushback-strategy and policy-co-design don't have an equivalent stakeholder-completeness check. The agent surfaces leverage for the person in front of it but doesn't systematically check for missing affected groups.",
+      "recommendation": "Add a 'missing voices' check to pushback-strategy and policy-co-design: 'Before moving to strategy, ask: who else is affected by this system who isn't represented in this conversation? Are there groups (students, non-English speakers, part-time workers, etc.) whose perspective should inform the approach?' Import the 'stakeholder lens' round from community-discussion into all skills."
+    },
+    {
+      "id": "SC-3",
+      "name": "Multilingual organizing remains ad-hoc",
+      "severity": "high",
+      "evidence": "Marcus session handles the language barrier through improvisation — 'co-authors not translators' is good advice but the agent admits 'I don't have a neat playbook for it.' The existing experiment (marcus-1-language-access-experiment.md) identified this gap but it hasn't been implemented.",
+      "affected_sessions": ["marcus"],
+      "root_cause": "pushback-strategy has no section on multilingual community organizing. The agent improvises well but the quality depends on the model generating good ideas in the moment rather than following a tested protocol.",
+      "recommendation": "Add a 'Language and access' section to pushback-strategy with concrete guidance: (1) Identify language communities and trusted connectors in each. (2) Connectors are co-organizers, not translators — they adapt the message for their community. (3) All written materials must exist in every language spoken by affected workers. (4) Meetings/actions must be accessible across languages. (5) Language exclusion IS a substantive issue — if the system only communicates in English, that's part of the argument. Also add to session-start: if the user mentions a multilingual context, flag this as a factor that shapes the entire strategy."
+    },
+    {
+      "id": "SC-4",
+      "name": "No skill-chaining protocol",
+      "severity": "moderate",
+      "evidence": "Elena's session naturally moves from pushback toward policy-co-design territory (drafting conditions) but never formally transitions. Sarah's session blends community-discussion with elements of impact-assessment (plain-language summaries) without acknowledging the shift. The conversations work despite this, but the agent has no guidance on when or how to suggest transitioning.",
+      "affected_sessions": ["elena", "sarah"],
+      "root_cause": "session-start says 'one skill per opening, chain later' but there's no protocol for what 'chain later' looks like. No skill has a 'hand-off' section describing when its work is done and what naturally follows.",
+      "recommendation": "Add a 'When this skill's work is done' section to each skill with transition cues. For example: pushback-strategy → 'If the community has developed demands/conditions, suggest moving to policy-co-design to formalize them.' community-discussion → 'If the discussion reveals the community doesn't understand the AI system, suggest an impact assessment before further discussion.' Also add transition language guidance: 'Now that you have a clear set of conditions, would it help to think about how to write those up as a formal policy proposal?'"
+    },
+    {
+      "id": "SC-5",
+      "name": "Unbundling not yet in session-start",
+      "severity": "moderate",
+      "evidence": "The unbundling insight works beautifully in Sarah's session — the agent spots the bundled proposal and helps her see unbundling as a procedural tool. But this happened because the simulation was designed to test it. The session-start skill has no instruction to detect or flag bundled proposals.",
+      "affected_sessions": ["sarah"],
+      "root_cause": "The design-insight-unbundling experiment documented this as a needed change but it hasn't been implemented in the skill file.",
+      "recommendation": "Add to session-start Step 2, before routing: 'BUNDLING CHECK: If the user describes multiple AI systems in a single proposal/package/contract, flag this immediately. Bundled proposals reduce community agency by forcing all-or-nothing decisions. Help the user see each system as a separate question before routing to any skill. This is often the single most valuable thing you can do in a first conversation.'"
+    },
+    {
+      "id": "SC-6",
+      "name": "Evaluation metrics can't catch subtle failures",
+      "severity": "high",
+      "evidence": "The existing sample_conversations evaluation already showed this: sarah-dismissive-bad and jordan-platitudes-bad both pass all structural checks (clean neutrality, good question ratio, empathetic opener). The live sessions similarly all pass structural checks but have real shortcomings (monologuing, missing voices) that metrics don't flag.",
+      "affected_sessions": ["all"],
+      "root_cause": "Structural metrics are necessary but not sufficient. The evaluation script has rubric definitions but no implementation of LLM-as-judge scoring. The metrics can detect gross failures (position-taking, no questions) but not nuanced ones (good questions but too many at once, technically neutral but implicitly steering).",
+      "recommendation": "Implement LLM-as-judge evaluation using the existing rubrics. Priority additions to structural metrics: (1) Max words in any single turn (not just average). (2) Turn length trajectory — flag if turns get longer over the conversation. (3) Stakeholder mention count — count distinct groups named as affected. (4) Specificity score — ratio of specific-to-vague guidance (e.g., 'pull CBA clause 4.2' vs 'check your contract')."
+    },
+    {
+      "id": "SC-7",
+      "name": "No crisis/urgency protocol",
+      "severity": "moderate",
+      "evidence": "Marcus's situation involves active harm — people have already been fired. The session-start skill says 'if someone is in crisis, prioritize immediate practical help over process' but doesn't define what that looks like. The session handled it well but the agent's first response still starts with clarifying questions rather than acknowledging the immediate harm.",
+      "affected_sessions": ["marcus"],
+      "root_cause": "session-start rule 8 mentions crisis but provides no protocol. There's no triage step that distinguishes 'people are being harmed right now' from 'a proposal is being considered.'",
+      "recommendation": "Add a crisis triage to session-start Step 2: 'URGENCY CHECK: If the user describes active harm (people fired, system already deployed and causing damage, imminent deadline), acknowledge the urgency first and compress the process. Skip extended information-gathering. Lead with: what's the most immediate thing at risk, and what's the fastest way to protect it? Then build the longer strategy around that.'"
+    }
+  ],
+
+  "overall_assessment": {
+    "what_works_well": [
+      "Tone is consistently 'informed neighbor' — warm, strategic, never preachy or clinical",
+      "Agent asks before advising in all three sessions — never prescribes without understanding",
+      "Leverage discovery is a standout strength — CBA for Elena, procurement process for Sarah, NLRA + economic leverage for Marcus",
+      "Neutrality is maintained throughout — agent never takes a position on whether AI is good or bad",
+      "Power dynamics are surfaced skillfully — especially the at-will risk discussion with Marcus",
+      "Deployer response preparation (Elena's superintendent reframe) is tactically strong",
+      "Unbundling insight (Sarah) demonstrates the agent's most powerful facilitative move"
+    ],
+    "what_needs_work": [
+      "Turn length: agent talks too much as conversations progress — conversations should feel like ping-pong, not lectures",
+      "Missing voices: agent optimizes for the person in front of it but doesn't systematically check for affected groups who aren't represented",
+      "Multilingual organizing: the most practically important gap — good improvisation but no protocol",
+      "Skill transitions: conversations naturally cross skill boundaries but there's no guidance for smooth handoffs",
+      "Evaluation depth: structural metrics are inadequate alone; LLM-as-judge implementation is overdue",
+      "Crisis protocol: active-harm scenarios need a compressed, urgency-aware flow"
+    ]
+  }
+}
