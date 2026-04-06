@@ -1,0 +1,9 @@
+<ide_selection>The user selected the lines 5 to 5 from /Users/wilder/dev/UMO/cosagents/4-2/eval/live_session_analysis.json:
+o
+
+This may or may not be related to the current task.</ide_selection>
+Can you pull this repository in the previous directory https://github.com/bemental/pathfinder-agent
+
+---
+
+Please make ti so that the agents can spawn in larger groups and communites, get into debates where some side with others to make decisiosn and run simulations and display them here to see hwo they turn out, this should enablke a large swarm of community members to participate
