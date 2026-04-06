@@ -1,0 +1,192 @@
+{
+  "scenario": {
+    "title": "AI Productivity Tracking at Warehouse",
+    "proposal": "Deploy AI-powered cameras, wearables, and algorithmic performance scoring for all warehouse workers",
+    "context": "A fulfillment center with ~500 workers, mostly immigrant and working-class. Three workers have already been fired based on algorithmic recommendations. No union.",
+    "stakes": "Job security, worker dignity, surveillance normalization, algorithmic accountability, language access"
+  },
+  "members": [
+    {
+      "name": "Ingrid",
+      "role": "Shift Supervisor \u2014 promoted from floor, caught between workers and management",
+      "initial_stance": "oppose",
+      "final_stance": "undecided",
+      "coalition": "Undecided Bloc",
+      "shifted": true
+    },
+    {
+      "name": "Finn",
+      "role": "Night Shift Worker \u2014 single parent, can't afford to lose this job",
+      "initial_stance": "conditional",
+      "final_stance": "undecided",
+      "coalition": "Undecided Bloc",
+      "shifted": true
+    },
+    {
+      "name": "Paloma",
+      "role": "Safety Inspector \u2014 concerned about wearable device health effects",
+      "initial_stance": "undecided",
+      "final_stance": "undecided",
+      "coalition": "Undecided Bloc",
+      "shifted": false
+    },
+    {
+      "name": "Xiomara",
+      "role": "HR Representative \u2014 implements policies, uncomfortable with AI firings",
+      "initial_stance": "support",
+      "final_stance": "undecided",
+      "coalition": "Undecided Bloc",
+      "shifted": true
+    },
+    {
+      "name": "Amara",
+      "role": "Warehouse Veteran \u2014 20 years, seen every management fad come and go",
+      "initial_stance": "undecided",
+      "final_stance": "undecided",
+      "coalition": "Undecided Bloc",
+      "shifted": false
+    },
+    {
+      "name": "Wen",
+      "role": "New Hire \u2014 3 months in, already anxious about the tracking",
+      "initial_stance": "conditional",
+      "final_stance": "undecided",
+      "coalition": "Undecided Bloc",
+      "shifted": true
+    },
+    {
+      "name": "Hassan",
+      "role": "Forklift Operator \u2014 skilled role, worried about being scored like pickers",
+      "initial_stance": "oppose",
+      "final_stance": "undecided",
+      "coalition": "Undecided Bloc",
+      "shifted": true
+    },
+    {
+      "name": "Nadia",
+      "role": "Union Organizer (external) \u2014 trying to help workers organize",
+      "initial_stance": "oppose",
+      "final_stance": "undecided",
+      "coalition": "Undecided Bloc",
+      "shifted": true
+    }
+  ],
+  "rounds": [
+    {
+      "round_num": 1,
+      "phase": "Opening Statements",
+      "statements": [
+        {
+          "speaker": "Ingrid",
+          "text": "[Ingrid pauses, unable to speak] (error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZmZ7xZJC7tdMZb2ZC2oQ'})",
+          "stance": "undecided"
+        },
+        {
+          "speaker": "Finn",
+          "text": "[Finn pauses, unable to speak] (error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZmZ7ze4ERNBCpf1hiSp3'})",
+          "stance": "undecided"
+        },
+        {
+          "speaker": "Paloma",
+          "text": "[Paloma pauses, unable to speak] (error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZmZ82SDFcu1etLBdwgj1'})",
+          "stance": "undecided"
+        },
+        {
+          "speaker": "Xiomara",
+          "text": "[Xiomara pauses, unable to speak] (error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZmZ8499ccV628R91ATJL'})",
+          "stance": "undecided"
+        },
+        {
+          "speaker": "Amara",
+          "text": "[Amara pauses, unable to speak] (error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZmZ85zGzVPc8bCprjJrC'})",
+          "stance": "undecided"
+        },
+        {
+          "speaker": "Wen",
+          "text": "[Wen pauses, unable to speak] (error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZmZ87fynN6nyKQD2RRUh'})",
+          "stance": "undecided"
+        },
+        {
+          "speaker": "Hassan",
+          "text": "[Hassan pauses, unable to speak] (error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZmZ89TP33sjAwDVXiDGY'})",
+          "stance": "undecided"
+        },
+        {
+          "speaker": "Nadia",
+          "text": "[Nadia pauses, unable to speak] (error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZmZ8BFHeajzisPrK9PTv'})",
+          "stance": "undecided"
+        }
+      ]
+    },
+    {
+      "round_num": 2,
+      "phase": "Final Positions",
+      "statements": [
+        {
+          "speaker": "Wen",
+          "text": "[Wen pauses, unable to speak] (error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZmZ8DA8WoYe6LdpnaQf9'})",
+          "stance": "undecided"
+        },
+        {
+          "speaker": "Paloma",
+          "text": "[Paloma pauses, unable to speak] (error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZmZ8ExH2WYSt3mQ7DJKA'})",
+          "stance": "undecided"
+        },
+        {
+          "speaker": "Nadia",
+          "text": "[Nadia pauses, unable to speak] (error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZmZ8GkgSkBKMyE8Sxf94'})",
+          "stance": "undecided"
+        },
+        {
+          "speaker": "Hassan",
+          "text": "[Hassan pauses, unable to speak] (error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZmZ8JWMGz8uhXYwvXMZN'})",
+          "stance": "undecided"
+        },
+        {
+          "speaker": "Amara",
+          "text": "[Amara pauses, unable to speak] (error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZmZ8LA4wQ9ubsTjvj3yZ'})",
+          "stance": "undecided"
+        },
+        {
+          "speaker": "Ingrid",
+          "text": "[Ingrid pauses, unable to speak] (error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZmZ8MrGCTvRZu57hWPMp'})",
+          "stance": "undecided"
+        },
+        {
+          "speaker": "Xiomara",
+          "text": "[Xiomara pauses, unable to speak] (error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZmZ8PfQdM9nLzAfUzXtY'})",
+          "stance": "undecided"
+        },
+        {
+          "speaker": "Finn",
+          "text": "[Finn pauses, unable to speak] (error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZmZ8RT4Ugmq2P1bViQPA'})",
+          "stance": "undecided"
+        }
+      ]
+    }
+  ],
+  "coalitions": {
+    "Undecided Bloc": [
+      "Ingrid",
+      "Finn",
+      "Paloma",
+      "Xiomara",
+      "Amara",
+      "Wen",
+      "Hassan",
+      "Nadia"
+    ]
+  },
+  "final_vote": {
+    "Ingrid": "undecided",
+    "Finn": "undecided",
+    "Paloma": "undecided",
+    "Xiomara": "undecided",
+    "Amara": "undecided",
+    "Wen": "undecided",
+    "Hassan": "undecided",
+    "Nadia": "undecided"
+  },
+  "outcome": "SENT BACK \u2014 Community demands conditions before proceeding",
+  "analysis": "Analysis generation failed: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZmZ8TKfu1mGceRtNoNbz'}"
+}
